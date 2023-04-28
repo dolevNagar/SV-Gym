@@ -36,20 +36,19 @@ export default function Index(props) {
         }
     }
     return (
-        <div>
-            <h1>Enter Your Details</h1>
-            <input onChange={(e) => props.setID(e.target.value)} type="number" placeholder='Enter Your ID' />
-            <br />
-            <input onChange={(e) => props.setFullName(e.target.value)} type="text" placeholder='Enter Your Fullname' />
-            <br />
-            <select name="Choose Gender" id="genderSLC">
-                <option onClick={(e) => props.setGender(true)}>Male</option>
-                <option onClick={(e) => props.setGender(false)}>Female</option>
-            </select>
-            <br />
-            <button onClick={checkInputs}>Next</button>
+        <div className="container">
+          <h1>Enter Your Details</h1>
+          <input onChange={(e) => props.setID(e.target.value)} type="number" placeholder='Enter Your ID' />
+          <br />
+          <input onChange={(e) => props.setFullName(e.target.value)} type="text" placeholder='Enter Your Fullname' />
+          <br />
+          <select name="Choose Gender" id="genderSLC">
+            <option onClick={(e) => props.setGender(true)}>Male</option>
+            <option onClick={(e) => props.setGender(false)}>Female</option>
+          </select>
+          <br />
+          <button onClick={checkInputs}>Next</button>
         </div>
-
-    )
+      )      
 }
 <h1>Enter Your Details</h1>

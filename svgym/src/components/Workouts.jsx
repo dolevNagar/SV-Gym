@@ -10,7 +10,7 @@ export default function Workouts(props) {
         }
     }
     return (
-        <div>
+        <div className="container">
             <h1>How Many Workouts A Week?</h1>
             <select value={props.selectedWorkoutOption} onChange={(e) => props.setSelectedWorkoutOption(e.target.value)}>
                 {showList(props.selectedWorkoutOption, 7)}

@@ -1,38 +1,135 @@
-.App {
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+#headline {
+  font-size: 72px;
+  font-weight: bold;
   text-align: center;
+  margin-top: 50px;
+  animation-duration: 2s;
+  animation-name: fadeInDown;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid blue;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+input {
+  display: block;
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  background: none;
+}
+
+select {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 10px;
+  background: none;
+}
+
+option{
+  background: none;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  background-color: #0077cc;
+  color: black;
+  font-size: xx-large;
+  cursor: pointer;
+  background: none;
+}
+
+button:hover {
+  border: 5px solid black;
+}
+
+.workoutBTN {
+  display: block;
+  padding: 10px;
+  border: 5px solid black;
+  background: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 80%;
+}
+
+.workoutBTN:hover {
   color: white;
+  background-color: green;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 5px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
 }

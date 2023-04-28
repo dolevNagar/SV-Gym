@@ -16,9 +16,10 @@ export default function Ready(props) {
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>Ready?</h1>
             <button onClick={readyBTN}>Yes</button>
+            <br />
             <Link to={'/'}><button>No</button></Link>
         </div>
     )

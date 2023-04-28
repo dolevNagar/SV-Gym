@@ -25,19 +25,20 @@ export default function Training(props) {
     props.setWorkout(temp);
     nav('/workoutdisplay');
   }
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', width: '300px', alignItems: 'center' }}>
+    <div className="container">
       <h1>Welcome</h1>
       <h1>{`${props.fullName}`}</h1>
-      <button onClick={()=> moveToWorkout(arr[0].num, arr[0].km)}>Start</button>
+      <button onClick={() => moveToWorkout(arr[0].num, arr[0].km)} >Start</button>
       {show()}
       {arr.map((workout) => (
-        <button onClick={() => moveToWorkout(workout.num, workout.km)} key={workout.num}>
+        <button onClick={() => moveToWorkout(workout.num, workout.km)} key={workout.num} className='workoutBTN'>
           <h3>{`Workout No.: ${workout.num}`}</h3>
           <p>{`KM: ${workout.km}`}</p>
         </button>
-      )
-      )}
+      ))}
+      <br />
     </div>
   )
 }

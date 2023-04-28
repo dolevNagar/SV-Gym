@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dolevNagar/SV-Gym.git/static/css/main.c1462ece.css",
-    "main.js": "/dolevNagar/SV-Gym.git/static/js/main.76eceb26.js",
-    "static/js/787.b2c2d5b7.chunk.js": "/dolevNagar/SV-Gym.git/static/js/787.b2c2d5b7.chunk.js",
-    "static/media/background.jpg": "/dolevNagar/SV-Gym.git/static/media/background.1f4694ecdfa95cf9ac3f.jpg",
-    "index.html": "/dolevNagar/SV-Gym.git/index.html",
-    "main.c1462ece.css.map": "/dolevNagar/SV-Gym.git/static/css/main.c1462ece.css.map",
-    "main.76eceb26.js.map": "/dolevNagar/SV-Gym.git/static/js/main.76eceb26.js.map",
-    "787.b2c2d5b7.chunk.js.map": "/dolevNagar/SV-Gym.git/static/js/787.b2c2d5b7.chunk.js.map"
+    "main.css": "/SV-Gym/static/css/main.dc2f3276.css",
+    "main.js": "/SV-Gym/static/js/main.dc237c60.js",
+    "static/js/787.b2c2d5b7.chunk.js": "/SV-Gym/static/js/787.b2c2d5b7.chunk.js",
+    "static/media/background.jpg": "/SV-Gym/static/media/background.1f4694ecdfa95cf9ac3f.jpg",
+    "index.html": "/SV-Gym/index.html",
+    "main.dc2f3276.css.map": "/SV-Gym/static/css/main.dc2f3276.css.map",
+    "main.dc237c60.js.map": "/SV-Gym/static/js/main.dc237c60.js.map",
+    "787.b2c2d5b7.chunk.js.map": "/SV-Gym/static/js/787.b2c2d5b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1462ece.css",
-    "static/js/main.76eceb26.js"
+    "static/css/main.dc2f3276.css",
+    "static/js/main.dc237c60.js"
   ]
 }

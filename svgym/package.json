@@ -2,7 +2,7 @@
   "name": "svgym",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/dolevNagar/SV-Gym.git",
+  "homepage": "https://dolevNagar.github.io/SV-Gym",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

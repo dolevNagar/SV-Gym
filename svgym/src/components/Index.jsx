@@ -6,8 +6,9 @@ export default function Index(props) {
 
 
     const checkIDInput = () => {
+        document.getElementById('nameLBL').innerHTML="";
         if (props.id.length != 9) {
-            alert("ID Must Be Only 9 Numbers");
+            document.getElementById('nameLBL').innerHTML="ID Must Be Only 9 Numbers";
             return false;
         }
         else return true;
@@ -15,27 +16,28 @@ export default function Index(props) {
 
     const checkNameInput = () => {
         const fullName = props.fullName.trim();
+        document.getElementById('idLBL').innerHTML="";
 
         if (fullName.length <= 4) {
-            alert("Full Name Must Be More Than 4 Digits");
+            document.getElementById('idLBL').innerHTML="Full Name Must Be More Than 4 Digits";
             return false;
         }
 
         if (!fullName.includes(" ")) {
-            alert("Full Name Must Contain Space");
+            document.getElementById('idLBL').innerHTML="Full Name Must Contain Space";
             return false;
         }
 
-        if (!/^[a-z]+$/.test(fullName)) {
-            alert("Full Name Must Contain Only Small Letters");
+        if (/[A-Z]/.test(fullName)) {
+            document.getElementById('idLBL').innerHTML="Full Name Must Contain Only Small Letters";
             return false;
         }
 
         return true;
     };
-    
+
     const checkInputs = () => {
-        if (checkNameInput() && checkIDInput()) {
+        if (checkIDInput() && checkNameInput()) {
             nav('/workouts');
         }
     }
@@ -43,13 +45,21 @@ export default function Index(props) {
         <div className="container">
             <h1>Enter Your Details</h1>
             <input onChange={(e) => props.setID(e.target.value)} type="number" placeholder='Enter Your ID' />
+            <label id='nameLBL'></label>
+            <br />
+            <br />
             <br />
             <input onChange={(e) => props.setFullName(e.target.value)} type="text" placeholder='Enter Your Fullname' />
+            <label id='idLBL'></label>
             <br />
+            <br />
+            <br />
+            <h1 style={{display: 'contents'}}>Select Gender</h1>
             <select name="Choose Gender" id="genderSLC">
                 <option onClick={(e) => props.setGender(true)}>Male</option>
                 <option onClick={(e) => props.setGender(false)}>Female</option>
             </select>
+            <br />
             <br />
             <button onClick={checkInputs}>Next</button>
         </div>

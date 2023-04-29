@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Training(props) {
   const nav = useNavigate();
@@ -25,6 +25,7 @@ export default function Training(props) {
         </button>
       ))}
       <br />
+      <Link to={'/'}><button>Back To The Begining</button></Link>
     </div>
   )
 }
